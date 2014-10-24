@@ -26,17 +26,17 @@ end
 
 # English section
 get '/en' do
-  slim :index
+  slim :index_en
 end
 
 get '/en/products' do
-  slim :products
+  slim :products_en
 end
 
 get '/en/about_us' do
-  slim :about_us
+  slim :about_us_en
 end
 
 get '/en/contact_us' do
-  slim :contact_us
+  slim :contact_us_en
 end
