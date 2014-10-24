@@ -1,4 +1,13 @@
 
+body {
+  font-family: 
+}
+
 p a, ul li a {
   color: #009900;
 }
+
+.jumbotron {
+  background-color: white;
+}
+
