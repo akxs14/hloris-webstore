@@ -11,3 +11,6 @@ p a, ul li a {
   background-color: white;
 }
 
+.product-descr-box {
+  width: 480px;
+}
