@@ -1,60 +1,41 @@
 div class="container"
   div class="row"
     div class="col-md-12"
-      small
-        i Add alerts if form ok... success, else error.
 
-      div class="alert alert-success"
-        strong
-          span class="glyphicon glyphicon-send" Success! Message sent. (If form ok!)
-    
-      div class="alert alert-danger"
-        span class="glyphicon glyphicon-alert"
-          strong Error! Please check the inputs. (If form error!)
+      form role="form" action="/contact_us_en" method="post"
+        div class="col-lg-6"
+          div class="form-group"
+            label for="InputName" Your Name
+            div class="input-group"
+              input type="text" class="form-control" name="name" id="name" placeholder="Enter Name"
+              span class="input-group-addon"
 
-    form role="form" action="" method="post"
-      div class="col-lg-6"
-        div class="well well-sm"
-          strong
-            i class="glyphicon glyphicon-ok form-control-feedback"Required Field
-        div class="form-group"
-          label for="InputName" Your Name
-          div class="input-group"
-            input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required
-            span class="input-group-addon"
-              i class="glyphicon glyphicon-ok form-control-feedback"
+          div class="form-group"
+            label for="InputEmail" Your Email
+            div class="input-group"
+              input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"
+              span class="input-group-addon"
 
-        div class="form-group"
-          label for="InputEmail" Your Email
-          div class="input-group"
-            input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required
-            span class="input-group-addon"
-              i class="glyphicon glyphicon-ok form-control-feedback"
+          div class="form-group"
+            label for="InputMessage" Message
+            div class="input-group"
+              textarea name="message" id="message" class="form-control" rows="5"
+              span class="input-group-addon"
 
-        div class="form-group"
-          label for="InputMessage" Message
-          div class="input-group"
-            textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required
-            span class="input-group-addon"
-              i class="glyphicon glyphicon-ok form-control-feedback"
+          div class="form-group"
+            label for="InputReal" What is 4+3? (Simple Spam Checker)
+            div class="input-group"
+              input type="text" class="form-control" name="InputReal" id="InputReal"
+              span class="input-group-addon"
+          
+          input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right"
 
-        div class="form-group"
-          label for="InputReal" What is 4+3? (Simple Spam Checker)
-          div class="input-group"
-            input type="text" class="form-control" name="InputReal" id="InputReal" required
-            span class="input-group-addon"
-              i class="glyphicon glyphicon-ok form-control-feedback"
-        
-        input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right"
-
-    hr class="featurette-divider hidden-lg"
-    div class="col-lg-5 col-md-push-1"
-      address
-      h3 Office Location
-      p class="lead"
-        a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on" The Pentagon
+      hr class="featurette-divider hidden-lg"
+      div class="col-lg-5 col-md-push-1"
+        address
+        h3 Office Location
+        span Omirou 12
         br
-        span Washington, DC 20301
-        span Phone: XXX-XXX-XXXX
+        span 66200 Petrousa Drama
         br
-        span Fax: XXX-XXX-YYYY
+        span Phone: +30 2 522 041 282

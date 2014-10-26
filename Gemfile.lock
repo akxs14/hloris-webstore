@@ -3,6 +3,11 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    mail (2.6.1)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.4.3)
+    pony (1.11)
+      mail (>= 2.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -24,6 +29,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pony
   sinatra (>= 1.4.5)
   slim
   thin
