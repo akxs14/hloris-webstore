@@ -44,6 +44,9 @@ post '/contact_us_en' do
   name = params[:name]
   sender_email = params[:email]
   message = params[:message]
+  check = params[:InputReal]
+
+  redirect '/en/contact_failure' if check != '7'
 
   begin
     Pony.mail(
@@ -54,11 +57,10 @@ post '/contact_us_en' do
     )
     redirect '/en'
   rescue
-    puts "boom!!!!!"
     @exception = $!
     puts @exception
   end
-  redirect '/en'
+  redirect '/en/contact_success'
 end
 
 # English section
@@ -77,3 +79,12 @@ end
 get '/en/contact_us' do
   slim :contact_us_en
 end
+
+get '/en/contact_failure' do
+  slim :contact_failure_en
+end
+
+get '/en/contact_success' do
+  slim :contact_success_en
+end
+
