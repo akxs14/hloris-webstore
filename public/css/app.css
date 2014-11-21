@@ -11,6 +11,10 @@ p a, ul li a {
   color: #009900;
 }
 
+ul li a {
+  margin-bottom: -30px;
+}
+
 .jumbotron {
   background-color: white;
 }
