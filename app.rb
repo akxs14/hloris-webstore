@@ -113,6 +113,31 @@ get '/el/contact_success' do
   slim :contact_success_el, :layout => 'layout_el'
 end
 
+post '/contact_us_el' do
+  configure_pony
+  name = params[:name]
+  sender_email = params[:email]
+  message = params[:message]
+  check = params[:InputReal]
+
+  redirect '/el/contact_failure' if check != '7'
+
+  begin
+    Pony.mail(
+      :from => "#{name}<#{sender_email}>",
+      :to => 'angelos@hloris.com',
+      :subject =>"#{name} has contacted you",
+      :body => "#{message}",
+    )
+    redirect '/el'
+  rescue
+    @exception = $!
+    puts @exception
+  end
+  redirect '/el/contact_success'
+end
+
+
 # German section
 get '/de' do
   slim :index_de, :layout => 'layout_de'
@@ -136,4 +161,28 @@ end
 
 get '/de/contact_success' do
   slim :contact_success_de, :layout => 'layout_de'
+end
+
+post '/contact_us_de' do
+  configure_pony
+  name = params[:name]
+  sender_email = params[:email]
+  message = params[:message]
+  check = params[:InputReal]
+
+  redirect '/de/contact_failure' if check != '7'
+
+  begin
+    Pony.mail(
+      :from => "#{name}<#{sender_email}>",
+      :to => 'angelos@hloris.com',
+      :subject =>"#{name} has contacted you",
+      :body => "#{message}",
+    )
+    redirect '/de'
+  rescue
+    @exception = $!
+    puts @exception
+  end
+  redirect '/de/contact_success'
 end
