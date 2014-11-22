@@ -1,0 +1,50 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content=""
+    meta name="author" content=""
+
+    title Hloris
+    link rel="stylesheet" href="/css/app.css"
+    link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"
+    link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet"
+  head
+
+  body
+    div class="container wrapper"
+      div class="header"
+        ul class="nav nav-pills pull-right"
+          li
+            a href="/en/about_us"
+              h3 About Us
+          li
+            a href="/en/products"
+              h3 Products
+          li
+            a href="/en/contact_us"
+              h3 Contact Us
+          li
+            a href="/en"
+              img src="../images/flag_uk.jpg" alt="home en"
+          li
+            a href="/de"
+              img src="../images/flag_de.jpg" alt="home de"              
+          li
+            a href="/el"
+              img src="../images/flag_gr.jpg" alt="home gr"
+        a href="/"
+          img src="../images/hloris_logo.png" alt="Hloris logo"
+
+      == yield
+
+    div class="push"
+
+    div class="footer"
+      p
+        a href="http://www.hloris.com" &copy; Hloris - Aton 2014
+
+    script type="text/javascript" src="../js/jquery-2.1.1.min.js"
+    script type="text/javascript" src="../js/bootstrap.min.js"
