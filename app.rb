@@ -88,3 +88,52 @@ get '/en/contact_success' do
   slim :contact_success_en
 end
 
+# Greek section
+get '/el' do
+  slim :index_el
+end
+
+get '/el/products' do
+  slim :products_el
+end
+
+get '/el/about_us' do
+  slim :about_us_el
+end
+
+get '/el/contact_us' do
+  slim :contact_us_el
+end
+
+get '/el/contact_failure' do
+  slim :contact_failure_el
+end
+
+get '/el/contact_success' do
+  slim :contact_success_el
+end
+
+# German section
+get '/de' do
+  slim :index_de
+end
+
+get '/de/products' do
+  slim :products_de
+end
+
+get '/de/about_us' do
+  slim :about_us_de
+end
+
+get '/de/contact_us' do
+  slim :contact_us_de
+end
+
+get '/de/contact_failure' do
+  slim :contact_failure_de
+end
+
+get '/de/contact_success' do
+  slim :contact_success_de
+end
