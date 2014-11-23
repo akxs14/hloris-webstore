@@ -24,19 +24,19 @@ end
 
 # Redirect to english pages for all default routes
 get '/' do
-  redirect '/en', :layout => 'layout_en'
+  redirect '/en', :layout => :'layout_en'
 end
 
 get '/products' do
-  redirect '/en/products', :layout => 'layout_en'
+  redirect '/en/products', :layout => :'layout_en'
 end
 
 get '/about_us' do
-  redirect '/en/about_us', :layout => 'layout_en'
+  redirect '/en/about_us', :layout => :'layout_en'
 end
 
 get '/contact_us' do
-  redirect '/en/contact_us', :layout => 'layout_en'
+  redirect '/en/contact_us', :layout => :'layout_en'
 end
 
 post '/contact_us_en' do
@@ -65,52 +65,52 @@ end
 
 # English section
 get '/en' do
-  slim :index_en, :layout => 'layout_en'
+  slim :index_en, :layout => :'layout_en'
 end
 
 get '/en/products' do
-  slim :products_en, :layout => 'layout_en'
+  slim :products_en, :layout => :'layout_en'
 end
 
 get '/en/about_us' do
-  slim :about_us_en, :layout => 'layout_en'
+  slim :about_us_en, :layout => :'layout_en'
 end
 
 get '/en/contact_us' do
-  slim :contact_us_en, :layout => 'layout_en'
+  slim :contact_us_en, :layout => :'layout_en'
 end
 
 get '/en/contact_failure' do
-  slim :contact_failure_en, :layout => 'layout_en'
+  slim :contact_failure_en, :layout => :'layout_en'
 end
 
 get '/en/contact_success' do
-  slim :contact_success_en, :layout => 'layout_en'
+  slim :contact_success_en, :layout => :'layout_en'
 end
 
 # Greek section
 get '/el' do
-  slim :index_el, :layout => 'layout_el'
+  slim :index_el, :layout => :'layout_el'
 end
 
 get '/el/products' do
-  slim :products_el, :layout => 'layout_el'
+  slim :products_el, :layout => :'layout_el'
 end
 
 get '/el/about_us' do
-  slim :about_us_el, :layout => 'layout_el'
+  slim :about_us_el, :layout => :'layout_el'
 end
 
 get '/el/contact_us' do
-  slim :contact_us_el, :layout => 'layout_el'
+  slim :contact_us_el, :layout => :'layout_el'
 end
 
 get '/el/contact_failure' do
-  slim :contact_failure_el, :layout => 'layout_el'
+  slim :contact_failure_el, :layout => :'layout_el'
 end
 
 get '/el/contact_success' do
-  slim :contact_success_el, :layout => 'layout_el'
+  slim :contact_success_el, :layout => :'layout_el'
 end
 
 post '/contact_us_el' do
@@ -140,27 +140,27 @@ end
 
 # German section
 get '/de' do
-  slim :index_de, :layout => 'layout_de'
+  slim :index_de, :layout => :'layout_de'
 end
 
 get '/de/products' do
-  slim :products_de, :layout => 'layout_de'
+  slim :products_de, :layout => :'layout_de'
 end
 
 get '/de/about_us' do
-  slim :about_us_de, :layout => 'layout_de'
+  slim :about_us_de, :layout => :'layout_de'
 end
 
 get '/de/contact_us' do
-  slim :contact_us_de, :layout => 'layout_de'
+  slim :contact_us_de, :layout => :'layout_de'
 end
 
 get '/de/contact_failure' do
-  slim :contact_failure_de, :layout => 'layout_de'
+  slim :contact_failure_de, :layout => :'layout_de'
 end
 
 get '/de/contact_success' do
-  slim :contact_success_de, :layout => 'layout_de'
+  slim :contact_success_de, :layout => :'layout_de'
 end
 
 post '/contact_us_de' do
