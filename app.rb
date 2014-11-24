@@ -39,7 +39,7 @@ get '/contact_us' do
   redirect '/en/contact_us', :layout => :'layout_en'
 end
 
-post '/contact_us_en' do
+post '/en/contact_us' do
   configure_pony
   name = params[:name]
   sender_email = params[:email]
@@ -113,7 +113,7 @@ get '/el/contact_success' do
   slim :contact_success_el, :layout => :'layout_el'
 end
 
-post '/contact_us_el' do
+post '/el/contact_us' do
   configure_pony
   name = params[:name]
   sender_email = params[:email]
@@ -163,7 +163,7 @@ get '/de/contact_success' do
   slim :contact_success_de, :layout => :'layout_de'
 end
 
-post '/contact_us_de' do
+post '/de/contact_us' do
   configure_pony
   name = params[:name]
   sender_email = params[:email]
