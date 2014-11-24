@@ -55,7 +55,7 @@ post '/en/contact_us' do
       :subject =>"#{name} has contacted you",
       :body => "#{message}",
     )
-    redirect '/en'
+    redirect '/en/contact_success'
   rescue
     @exception = $!
     puts @exception
@@ -129,7 +129,7 @@ post '/el/contact_us' do
       :subject =>"#{name} has contacted you",
       :body => "#{message}",
     )
-    redirect '/el'
+    redirect '/el/contact_success'
   rescue
     @exception = $!
     puts @exception
@@ -179,7 +179,7 @@ post '/de/contact_us' do
       :subject =>"#{name} has contacted you",
       :body => "#{message}",
     )
-    redirect '/de'
+    redirect '/de/contact_success'
   rescue
     @exception = $!
     puts @exception
